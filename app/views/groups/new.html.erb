@@ -1,1 +1,11 @@
 <h2>Cadastre um novo grupo</h2>
+
+
+<%= form_with model: @group do |f|  %>
+
+  <%= f.label :name, "Nome" %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+
+
+  <% end %>
